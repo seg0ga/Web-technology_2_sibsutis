@@ -11,17 +11,15 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///videohost.db'
 db = SQLAlchemy(app)
 
-app.config['SECRET_KEY'] = 'qwerty666777'  # Важно для безопасности
+app.config['SECRET_KEY'] = 'qwerty666777'
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
 
-# Конфигурация загрузки файлов
 app.config['UPLOAD_FOLDER'] = 'static/uploads/videos'
-app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024  # 100MB лимит
+app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024 
 app.config['ALLOWED_EXTENSIONS'] = {'mp4', 'mov', 'avi', 'mkv', 'webm'}
 
-# Создаем папку для загрузок, если её нет
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 def allowed_file(filename):
