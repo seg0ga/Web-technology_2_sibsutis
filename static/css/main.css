@@ -1,10 +1,9 @@
-/*header*/
 header {
     position: sticky;
     top: 0;
     padding: 10px;
     z-index: 1000;
-    background: #333333; /* Более светлый серый фон */
+    background: #333333;
     -webkit-box-shadow: 0 5px 25px rgba(0,0,0,0.5);
     box-shadow: 0 5px 25px rgba(31, 1, 203, 0.5);
 }
@@ -13,14 +12,13 @@ header {
     width: 96px;
 }
 
-/* Основные стили для прижатия футера к низу */
 html, body {
     background-image: url('yadro_bg4.png');
     background-color: #333333;
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    background-attachment: fixed;/* Еще более светлый текст */
+    background-attachment: fixed;
 }
 
 .page {
@@ -34,17 +32,15 @@ html, body {
     padding-bottom: 20px;
 }
 
-/* Дополнительные стили для футера */
 footer {
     margin-top: auto;
     width: 100%;
-    background: #333333; /* Более светлый серый фон */
+    background: #333333;
     -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0.5);
     box-shadow: 0 0px 0px rgba(0,0,0,0.5);
     color: #000000;
 }
 
-/*POSTS*/
 .row {
     padding: 50px 0;
 }
@@ -88,10 +84,10 @@ footer {
 }
 
 .item .item-in {
-    background: #3d3d3d; /* Более светлый серый фон для постов */
+    background: #3d3d3d;
     padding: 40px;
     position: relative;
-    color: #f0f0f0; /* Еще более светлый текст */
+    color: #f0f0f0;
 }
 
 .item .item-in:hover:before {
@@ -120,14 +116,14 @@ footer {
 
 .item p {
     font-size: 12px;
-    color: #e0e0e0; /* Более светлый текст */
+    color: #e0e0e0;
 }
 
 .item a {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
-    color: #c0c0c0; /* Более светлые ссылки */
+    color: #c0c0c0;
     margin-top: 10px;
 }
 
@@ -152,7 +148,6 @@ footer {
     font-weight: 300;
 }
 
-/*POSTS video*/
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -160,7 +155,7 @@ footer {
     overflow: hidden;
     margin-bottom: 1rem;
     background: #000;
-    border: 2px solid #555; /* Более светлая окантовка видео */
+    border: 2px solid #555;
 }
 
 .video-container video {
@@ -171,5 +166,5 @@ footer {
     height: 100%;
 }
 footer .text-body-secondary {
-    color: #e2e2e2 !important; /* или любой другой светлый оттенок */
+    color: #e2e2e2 !important;
 }
