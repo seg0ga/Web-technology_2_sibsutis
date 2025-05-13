@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Выложить новое видео
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 style="color: white;">Выложить видео</h2>
+    <form method="POST" enctype="multipart/form-data" class="mt-4">
+
+        <div class="mb-3">
+            <label for="title" class="form-label"style="color: white;">Заголовок</label>
+            <input type="text" class="form-control" id="title" name="title" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="text" class="form-label"style="color: white;">Текст статьи</label>
+            <textarea class="form-control" id="text" name="text" rows="8" required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="video" class="form-label"style="color: white;">Видеофайл</label>
+            <input type="file" class="form-control" id="video" name="video" accept="video/*" required>
+            <div class="form-text" style="color: white;">Поддерживаемые форматы: MP4, MOV, AVI, MKV, WebM (макс. 100MB)</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Опубликовать</button>
+    </form>
+</div>
+
+<style>
+    .form-control:focus {
+        border-color: #0d6efd;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+    textarea {
+        resize: vertical;
+        min-height: 150px;
+    }
+    form {
+        padding-bottom: 5rem;
+    }
+</style>
+{% endblock %}

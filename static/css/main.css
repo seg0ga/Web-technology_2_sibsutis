@@ -1,0 +1,175 @@
+/*header*/
+header {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    z-index: 1000;
+    background: #333333; /* Более светлый серый фон */
+    -webkit-box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 25px rgba(31, 1, 203, 0.5);
+}
+.header__img {
+    height: 48px;
+    width: 96px;
+}
+
+/* Основные стили для прижатия футера к низу */
+html, body {
+    background-image: url('yadro_bg4.png');
+    background-color: #333333;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;/* Еще более светлый текст */
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+/* Дополнительные стили для футера */
+footer {
+    margin-top: auto;
+    width: 100%;
+    background: #333333; /* Более светлый серый фон */
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0.5);
+    box-shadow: 0 0px 0px rgba(0,0,0,0.5);
+    color: #000000;
+}
+
+/*POSTS*/
+.row {
+    padding: 50px 0;
+}
+.seperator {
+    margin-bottom: 30px;
+    width: 35px;
+    height: 3px;
+    background: #777;
+    border: none;
+}
+.title {
+    text-align: center;
+}
+
+.title .row {
+    padding: 50px 0 0;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.title .seperator {
+    margin: 0 auto 10px;
+}
+.item {
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 1px;
+    float: left;
+    -webkit-box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.item .item-in {
+    background: #3d3d3d; /* Более светлый серый фон для постов */
+    padding: 40px;
+    position: relative;
+    color: #f0f0f0; /* Еще более светлый текст */
+}
+
+.item .item-in:hover:before {
+    width: 100%;
+}
+
+.item .item-in::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 0%;
+    background: #ffffff;
+    right: 0px;
+    -webkit-transition: width 0.4s;
+    transition: width 0.4s;
+}
+
+.item h4 {
+    font-size: 18px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.item p {
+    font-size: 12px;
+    color: #e0e0e0; /* Более светлый текст */
+}
+
+.item a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #c0c0c0; /* Более светлые ссылки */
+    margin-top: 10px;
+}
+
+.item a i {
+    opacity: 0;
+    padding-left: 0px;
+    transition: 0.4s;
+    font-size: 24px;
+    display: inline-block;
+    top: 5px;
+    position: relative;
+}
+
+.item a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.item a:hover i {
+    padding-left: 10px;
+    opacity: 1;
+    font-weight: 300;
+}
+
+/*POSTS video*/
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    background: #000;
+    border: 2px solid #555; /* Более светлая окантовка видео */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+footer .text-body-secondary {
+    color: #e2e2e2 !important; /* или любой другой светлый оттенок */
+}
