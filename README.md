@@ -31,7 +31,7 @@ Videohost/
 ## 🚀 Установка и запуск
 
 ```bash
-git clone <репозиторий>
+git clone https://github.com/seg0ga/Web-technology_2_sibsutis
 cd Videohost
 python3 -m venv venv
 source venv/bin/activate 
